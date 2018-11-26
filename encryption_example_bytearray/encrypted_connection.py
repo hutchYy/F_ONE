@@ -33,32 +33,23 @@ class encrypter:
         cipher = AES.new(self.hash, AES.MODE_EAX)
         self.nonce = cipher.nonce
         ciphertext, tag = cipher.encrypt_and_digest(raw.encode())
-        cipherPack = self.nonce + b"|" + ciphertext
+        cipherPack = self.nonce + tag +ciphertext
         return cipherPack
     def decrypt(self, cipherPack):
-        #print("Decyphering the message...")
-        cipherTextArray = []
-        nonceArray = []
-        cipherPackArray = []
-        cipherText = b""
-        nonce = b""
         cipherPackArray = bytearray(cipherPack)
-        flag = False
-        for i in range(len(cipherPackArray)):
-            ignore = False
-            if cipherPackArray[i] == 124:
-                flag = True
-                ignore = True
-            if not ignore :
-                if flag :
-                    cipherTextArray.append(cipherPackArray[i])
-                else:
-                    nonceArray.append(cipherPackArray[i])
-        cipherText = bytes(cipherTextArray)
+        nonceArray = cipherPackArray[0:16]
+        tagArray = cipherPackArray[16:32]
+        cipherTextArray = cipherPackArray[32::]
         nonce = bytes(nonceArray)
+        tag =  bytes (tagArray)
+        cipherText = bytes(cipherTextArray)
         cipher = AES.new(self.hash, AES.MODE_EAX, nonce = nonce)
         decypherText = cipher.decrypt(cipherText)
-        plaintext = decypherText.decode("utf-8")
+        try:
+            cipher.verify(tag)
+            plaintext = decypherText.decode("utf-8")
+        except:
+            print("Key incorrect or message corrupted")
         return plaintext
 
     def send_message_server(self, raw) :

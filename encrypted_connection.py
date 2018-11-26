@@ -31,54 +31,47 @@ class encrypter:
     def close_tcp_connexion_client(self):
         connexion_socket.close()
 
-    def encrypt(self, raw):
+    def encrypt(self, raw, mode):
         cipher = AES.new(self.hash, AES.MODE_EAX)
         self.nonce = cipher.nonce
-        ciphertext, tag = cipher.encrypt_and_digest(raw.encode())
-        cipherPack = self.nonce + b"|" + ciphertext
+        if mode == "picture":
+            ciphertext, tag = cipher.encrypt_and_digest(raw)
+        else:
+            ciphertext, tag = cipher.encrypt_and_digest(raw.encode("utf-8"))
+        cipherPack = self.nonce + tag + ciphertext
         return cipherPack
-    def decrypt(self, cipherPack):
-        #print("Decyphering the message...")
-        try : 
-            #print("Decyphering the message...")
-            cipherTextArray = []
-            nonceArray = []
-            cipherPackArray = []
-            cipherText = b""
-            nonce = b""
-            cipherPackArray = bytearray(cipherPack)
-            flag = False
-            for i in range(len(cipherPackArray)):
-                ignore = False
-                if cipherPackArray[i] == 124:
-                    flag = True
-                    ignore = True
-                if not ignore :
-                    if flag :
-                        cipherTextArray.append(cipherPackArray[i])
-                    else:
-                        nonceArray.append(cipherPackArray[i])
-            cipherText = bytes(cipherTextArray)
-            nonce = bytes(nonceArray)
-            cipher = AES.new(self.hash, AES.MODE_EAX, nonce = nonce)
-            decypherText = cipher.decrypt(cipherText)
-            plaintext = decypherText.decode("utf-8")
+    def decrypt(self, cipherPack, mode):
+        cipherPackArray = bytearray(cipherPack)
+        nonceArray = cipherPackArray[0:16]
+        tagArray = cipherPackArray[16:32]
+        cipherTextArray = cipherPackArray[32::]
+        nonce = bytes(nonceArray)
+        tag =  bytes (tagArray)
+        cipherText = bytes(cipherTextArray)
+        cipher = AES.new(self.hash, AES.MODE_EAX, nonce = nonce)
+        decypherText = cipher.decrypt(cipherText)
+        try:
+            cipher.verify(tag)
+            if mode == "picture":
+                plaintext = decypherText
+            else:
+                plaintext = decypherText.decode("utf-8")
             return plaintext
         except:
-            print("Can't decypher the message !")
+            print("Key incorrect or message corrupted")
 
     def send_message_server(self, raw) :
-        encryptedPack = self.encrypt(raw)
+        encryptedPack = self.encrypt(raw, "message")
         client_socket.send(encryptedPack)
     def send_message_client(self, raw) :
-        encryptedPack = self.encrypt(raw)
+        encryptedPack = self.encrypt(raw, "message")
         connexion_socket.send(encryptedPack)
     def receive_message_server(self) :
         #print("WAITING FOR TCP PACKET")
         cipherPack = client_socket.recv(1024)
         #print("TCP MESSAGE RECEIVED")
         try :
-            stringMessage = self.decrypt(cipherPack)
+            stringMessage = self.decrypt(cipherPack,"message")
             return stringMessage
         except :
             print("WRONG PASSPHRASE, EXITING...")
@@ -88,23 +81,18 @@ class encrypter:
         cipherPack = connexion_socket.recv(1024)
         #print("TCP MESSAGE RECEIVED")
         try : 
-            stringMessage = self.decrypt(cipherPack)
+            stringMessage = self.decrypt(cipherPack, "message")
             return stringMessage
         except :
             print("WRONG PASSPHRASE, EXITING...")
             return "exit"
-"""
     def send_picture_client(self, raw) :
         encryptedPack = self.encrypt(raw, "picture")
-        connexion_socket.send(encryptedPack[0])
-        #print("TCP MESSAGE")
-        connexion_socket.send(encryptedPack[1])
-        #print("TCP NONCE")
+        connexion_socket.send(encryptedPack)
+
     def receive_picture_server(self) :  
-        messageRecu = client_socket.recv(2048)
-        nonceRecu = client_socket.recv(2048)
+        cipherPack = client_socket.recv(2048)
         #print("TCP MESSAGE RECEIVED")
-        bytesMessage = self.decrypt(messageRecu, nonceRecu, "picture")
-        stringMessage = bytesMessage
-        return stringMessage
-"""
+        bytesMessage = self.decrypt(cipherPack,"picture")
+        print(bytesMessage)
+        return bytesMessage

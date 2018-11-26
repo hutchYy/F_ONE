@@ -1,2 +1,2 @@
 NEEDED PACKAGES :
-pip install pycrypto
+pip install pycryptodome

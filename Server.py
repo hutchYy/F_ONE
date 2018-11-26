@@ -183,6 +183,9 @@ def screenThatbeach(): #If chosen, take a stealth screenshot of the victim and s
         pic.close()
         os.system("qlmanage -p new" + data + ".png >/dev/null 2>&1" )
         consoleCleaner(False)
+    else:
+        print("You do not have permissions to create a file there.")
+        consoleCleaner(True)
 
 # STARTING MAIN LOOP.
 #Calling the function to set the secret key
