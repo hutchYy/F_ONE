@@ -1,12 +1,12 @@
 from Crypto.Cipher import AES
-import socket, time
+import socket, time, os
 class encrypter:
     nonce = []
-    def __init__(self, hash) :
+    def __init__(self, hash : bytes) :
         super().__init__()
         self.hash = hash
 
-    def initialize_tcp_connexion_server(self, HOST, PORT):
+    def initialize_tcp_connexion_server(self, HOST : int, PORT : int):
         global server_socket
         global client_socket
         global client_ip
@@ -19,7 +19,7 @@ class encrypter:
         client_socket, (client_ip, client_port) = server_socket.accept()
         print("[*] Client " +client_ip+ " connected.\n")
         return client_ip
-    def initialize_tcp_connexion_client(self, HOST, PORT):
+    def initialize_tcp_connexion_client(self, HOST : int, PORT : int):
         global connexion_socket
         connexion_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         connexion_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -34,7 +34,7 @@ class encrypter:
     def encrypt(self, raw, mode):
         cipher = AES.new(self.hash, AES.MODE_EAX)
         self.nonce = cipher.nonce
-        if mode == "picture":
+        if mode == "raw_data":
             ciphertext, tag = cipher.encrypt_and_digest(raw)
         else:
             ciphertext, tag = cipher.encrypt_and_digest(raw.encode("utf-8"))
@@ -52,7 +52,7 @@ class encrypter:
         decypherText = cipher.decrypt(cipherText)
         try:
             cipher.verify(tag)
-            if mode == "picture":
+            if mode == "raw_data":
                 return decypherText
             else:
                 plaintext = decypherText.decode("utf-8")
@@ -69,7 +69,7 @@ class encrypter:
 
     def receive_message_server(self) :
         #print("WAITING FOR TCP PACKET")
-        cipherPack = client_socket.recv(1024)
+        cipherPack = client_socket.recv(2048)
         #print("TCP MESSAGE RECEIVED")
         try :
             stringMessage = self.decrypt(cipherPack,"message")
@@ -79,7 +79,7 @@ class encrypter:
             return "exit"
     def receive_message_client(self) :
         #print("WAITING FOR TCP PACKET")
-        cipherPack = connexion_socket.recv(1024)
+        cipherPack = connexion_socket.recv(2048)
         #print("TCP MESSAGE RECEIVED")
         try : 
             stringMessage = self.decrypt(cipherPack, "message")
@@ -88,11 +88,43 @@ class encrypter:
             print("WRONG PASSPHRASE, EXITING...")
             return "exit"
 
-    def send_picture_client(self, raw) :
-        encryptedPack = self.encrypt(raw, "picture")
+    def send_raw_data_client(self, raw) :
+        encryptedPack = self.encrypt(raw, "raw_data")
         connexion_socket.send(encryptedPack)
-    def receive_picture_server(self) :  
+    def receive_raw_data_server(self) :  
         cipherPack = client_socket.recv(4096)
         #print("TCP MESSAGE RECEIVED")
-        bytesMessage = self.decrypt(cipherPack,"picture")
+        bytesMessage = self.decrypt(cipherPack,"raw_data")
         return bytesMessage
+
+    def DownloadFile(self, path, fileName):
+        data = self.receive_message_server()
+        if str(data) == "downloading" :
+            print("Downloading "+fileName+" ...")
+            if not os.path.exists(path):
+                os.makedirs(path)
+            fileToDownload = open(path+"/"+fileName, "wb")
+            fileData = bytes(self.receive_raw_data_server())
+            fileToDownload.write(fileData)
+            while not ("completed" in str(fileData)):
+                fileData = bytes(self.receive_raw_data_server())
+                if fileData == b'permissionsfailed' :
+                    break
+                fileToDownload.write(fileData)
+            fileToDownload.close()
+            return True
+        else:
+            return False
+    def UploadFile(self, fileName):
+        try :
+            self.send_message_client(("downloading"))
+            fileToOpen = open(fileName, "rb")
+            fileRead = fileToOpen.read(4096-32)
+            while fileRead != b'':
+                self.send_raw_data_client(fileRead)
+                fileRead = fileToOpen.read(4096-32)
+            fileToOpen.close()
+            time.sleep(0.5)
+            self.send_raw_data_client(b'completed')
+        except:
+           self.send_message_client(("permissionsfailed"))
