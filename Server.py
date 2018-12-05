@@ -72,6 +72,8 @@ def selection(menu,choix) : #Switch case, to dispatch menu possibilities.
             return True
         elif choix == "6" :
             print("\nSee you later !")
+            encrypter.send_message_server("exit")
+            time.sleep(1.5)
             consoleCleaner(False)
             return False
         else :

