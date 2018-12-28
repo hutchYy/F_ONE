@@ -1,0 +1,226 @@
+--------------------------------------------------2018-12-28 23:37:22,666 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:37:22,667 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:37:22,667 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:37:22,668 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:37:22,673 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:37:22,674 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:37:22,740 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:37:22,746 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:37:22,984 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:37:23,031 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:37:23,067 - root - MainThread -  INFO - Os victim infos  : Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:37:23,073 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:37:25,266 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:37:25,272 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:37:26,277 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:37:27,787 - root - MainThread -  INFO - Closing tcp server connexion
+--------------------------------------------------
+2018-12-28 23:38:06,059 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:38:06,060 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:38:06,060 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:38:06,061 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:38:06,065 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:38:06,066 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:38:06,117 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:38:06,123 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:38:06,355 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:38:06,396 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:38:06,408 - root - MainThread -  INFO - Os victim infos  : Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:38:06,414 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:38:08,814 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:38:08,821 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:38:09,826 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:38:11,333 - root - MainThread -  INFO - Closing tcp server connexion
+----------------------------------------------------------------------------------------------------
+2018-12-28 23:38:26,785 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:38:26,786 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:38:26,786 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:38:26,787 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:38:26,791 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:38:26,792 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:38:26,857 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:38:26,863 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:38:27,082 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:38:27,123 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:38:27,136 - root - MainThread -  INFO - Os victim infos  : Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:38:27,142 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:38:29,310 - root - MainThread -  INFO - Entering to the upload menu
+2018-12-28 23:38:45,935 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:38:45,940 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:38:46,945 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:38:48,454 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:39:33,451 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:39:33,451 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:39:33,451 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:39:33,452 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:39:33,458 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:39:33,459 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:39:33,536 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:39:33,542 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:39:33,708 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:39:33,775 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:39:33,782 - root - MainThread -  INFO - Os victim infos  : Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:39:33,788 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:39:36,068 - root - MainThread -  INFO - Taking a screenshot
+2018-12-28 23:39:36,105 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-28 23:39:42,485 - root - MainThread -  INFO - Download sucessful
+2018-12-28 23:40:20,526 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:40:20,532 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:40:21,537 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:40:23,047 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:42:53,934 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:42:53,934 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:42:53,935 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:42:53,935 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:42:53,941 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:42:53,941 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:42:54,004 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:42:54,010 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:42:54,218 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:42:54,280 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:42:54,304 - root - MainThread -  INFO - Os victim infos ↴
+ Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:42:54,310 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:42:56,732 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:42:56,738 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:42:57,744 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:42:59,255 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:43:21,735 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:43:21,736 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:43:21,736 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:43:21,737 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:43:21,742 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:43:21,742 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:43:21,800 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:43:21,806 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:43:21,999 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:43:22,055 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:43:22,073 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:43:22,079 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:43:24,852 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:43:24,859 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:43:25,863 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:43:27,373 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:44:39,703 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:44:39,704 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:44:39,704 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:44:39,705 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:44:39,709 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:44:39,710 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:44:39,760 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:44:39,766 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:44:40,150 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:44:40,193 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:44:40,212 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:44:40,217 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:45:10,411 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:45:10,417 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:45:11,422 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:45:12,932 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:45:14,327 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:45:14,328 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:45:14,328 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:45:14,329 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:45:14,333 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:45:14,333 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:45:14,384 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:45:14,391 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:45:14,603 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:45:14,640 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:45:14,671 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:45:14,676 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:45:37,074 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:45:37,080 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:45:38,083 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:45:39,591 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:49:34,397 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:49:34,398 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:49:34,398 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:49:34,398 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:49:34,403 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:49:34,403 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:49:34,452 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:49:34,459 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:49:34,668 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:49:34,714 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:49:34,744 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:49:34,751 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:49:43,865 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:49:43,871 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:49:44,875 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:49:46,384 - root - MainThread -  INFO - Closing tcp server connexion
