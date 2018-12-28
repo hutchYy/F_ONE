@@ -224,3 +224,32 @@ Default path : C:\Users\azerty\Desktop\dist
 2018-12-28 23:49:43,871 - root - Thread-1 -  INFO - The client is being shutted down
 2018-12-28 23:49:44,875 - root - Thread-1 -  INFO - Closing tcp client connexion
 2018-12-28 23:49:46,384 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-28 23:58:21,150 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-28 23:58:21,150 - root - MainThread -  INFO - Starting Client Thread
+2018-12-28 23:58:21,150 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-28 23:58:21,151 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-28 23:58:21,156 - root - Thread-1 -  INFO - Victim is online
+2018-12-28 23:58:21,157 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-28 23:58:21,231 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-28 23:58:21,259 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-28 23:58:21,423 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-28 23:58:21,485 - root - MainThread -  INFO - Getting os victim infos
+2018-12-28 23:58:21,498 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-28 23:58:21,505 - root - MainThread -  INFO - Entering in the main loop
+2018-12-28 23:58:23,490 - root - MainThread -  INFO - Taking a screenshot
+2018-12-28 23:58:23,502 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-28 23:58:30,535 - root - MainThread -  INFO - Download sucessful
+2018-12-28 23:58:54,699 - root - MainThread -  INFO - Exiting the client
+2018-12-28 23:58:54,705 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-28 23:58:55,710 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-28 23:58:57,219 - root - MainThread -  INFO - Closing tcp server connexion
