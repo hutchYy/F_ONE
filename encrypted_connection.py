@@ -3,7 +3,9 @@ import socket
 import time
 import os
 import logging
-logging.basicConfig(filename="Server.log",
+import sys
+if sys.argv[0] == "Server.py" :
+    logging.basicConfig(filename="Server.log",
                     level=logging.DEBUG,
                     format="%(asctime)s - %(name)s - %(threadName)s -  %(levelname)s - %(message)s")
 
@@ -70,7 +72,14 @@ class server:
         client_socket, (client_ip, client_port) = server_socket.accept()
         print("[*] Client " + client_ip + " connected.\n")
         return client_ip
-
+    def dump_buffer(self) :
+        client_socket.setblocking(False)
+        while True:
+            try :
+                client_socket.recv(1048576)
+            except :
+                client_socket.setblocking(True)
+                break
     def close_tcp_connexion_server(self):
         client_socket.close()
 
@@ -84,7 +93,7 @@ class server:
 
     def receive_message_server(self):
         #print("WAITING FOR TCP PACKET")
-        cipherPack = client_socket.recv(2048)
+        cipherPack = client_socket.recv(1048576)
         #print("TCP MESSAGE RECEIVED")
         try:
             stringMessage = hideComunnications.decrypt(cipherPack, "message")
@@ -121,6 +130,7 @@ class server:
             fileRead = b""
             if os.path.isfile(fileName):
                 self.send_message_server("downloading")
+                time.sleep(2)
                 fileToOpen = open(fileName, "rb")
                 fileRead = fileToOpen.read(2048-32)
                 while (fileRead):
@@ -182,7 +192,8 @@ class client:
 
     def DownloadFile(self, path, fileName):
         data = self.receive_message_client()
-        if str(data) == "downloading":
+        print(data)
+        if b"downloading" in data:
             print("Downloading "+fileName+" ...")
             if not os.path.exists(path):
                 os.makedirs(path)

