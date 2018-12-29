@@ -1,7 +1,7 @@
 import re
 import json
 from urllib.request import urlopen
-class GeoLocalisation:
+class GeoLocalization:
     def __init__(self, ip_address: str):
         super().__init__()
         self.ip_address = ip_address
