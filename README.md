@@ -1,10 +1,5 @@
 # WELCOME TO F_ONE
-To use the **F_ONE**, please install the dependencies by using :
-```
-pip3 install -r requirements.txt
-```
- 
-$project
+project
 ========
 
 $project will solve your problem of where to start with documentation,
@@ -25,24 +20,8 @@ Features
 Installation
 ------------
 
-Install $project by running:
+Install **F_ONE** dependencies by running:
 
-    install project
-
-Contribute
-----------
-
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
-
-License
--------
-
-The project is licensed under the BSD license.
- Logo
+  ```
+  pip3 install -r requirements.txt
+  ```
