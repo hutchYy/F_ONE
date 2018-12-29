@@ -1,0 +1,103 @@
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 16:13:22,488 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 16:13:22,488 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 16:13:22,488 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 16:13:22,491 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 16:13:22,501 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 16:13:22,502 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 16:13:22,521 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 16:13:22,527 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 16:13:22,819 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 16:13:22,836 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 16:13:22,858 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools/reverse_shell
+2018-12-29 16:13:22,863 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 16:21:21,444 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 16:21:21,463 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 16:21:22,467 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 16:21:23,978 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 16:23:47,706 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 16:23:47,706 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 16:23:47,706 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 16:23:47,709 - root - Thread-1 -  WARNING - Victim's server is not alive !
+2018-12-29 16:23:47,709 - root - Thread-1 -  INFO - Connected to victim's server
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 16:24:04,246 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 16:24:04,246 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 16:24:04,246 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 16:24:04,249 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 16:24:04,257 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 16:24:04,257 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 16:24:04,265 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 16:24:04,278 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 16:24:04,444 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 16:24:04,460 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 16:24:04,485 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools/reverse_shell
+2018-12-29 16:24:04,491 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 16:31:24,924 - root - MainThread -  INFO - Showing os infos
+2018-12-29 16:41:53,064 - root - MainThread -  INFO - Exiting the client
+2018-12-29 16:41:53,071 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 16:41:54,076 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 16:41:55,585 - root - MainThread -  INFO - Closing tcp server connexion
+
+
+----------------------------------------------------------------------------------------------------
+
+
+2018-12-29 16:41:57,511 - root - MainThread -  INFO - Credentials from argpars -> ip : localhost | port : 6970
+2018-12-29 16:41:57,511 - root - MainThread -  INFO - Starting Client Thread
+2018-12-29 16:41:57,512 - root - MainThread -  INFO - Waiting for the victim to connect on our server
+2018-12-29 16:41:57,514 - root - Thread-1 -  INFO - Connected to victim's server
+2018-12-29 16:41:57,519 - root - Thread-1 -  INFO - Victim is online
+2018-12-29 16:41:57,519 - root - Thread-1 -  INFO - Waking up victim's client to connect on the server
+2018-12-29 16:41:57,537 - root - MainThread -  INFO - The victim is connected with the following ip : 127.0.0.1
+2018-12-29 16:41:57,563 - root - MainThread -  INFO - Trying to geolocating the victim
+2018-12-29 16:41:57,734 - root - MainThread -  INFO - Victim is connected from : local
+2018-12-29 16:41:57,751 - root - MainThread -  INFO - Getting os victim infos
+2018-12-29 16:41:57,763 - root - MainThread -  INFO - Os victim infos ↴
+Nom : posix
+Systeme : Darwin
+Kernel : 18.2.0
+User : juliandotreppe
+Default path : /Users/juliandotreppe/Desktop/hack_tools/reverse_shell
+2018-12-29 16:41:57,769 - root - MainThread -  INFO - Entering in the main loop
+2018-12-29 16:42:00,561 - root - MainThread -  INFO - Entering to the reverse shell
+2018-12-29 16:42:02,953 - root - MainThread -  INFO - Reverse shell # command > stb
+2018-12-29 16:42:04,864 - root - MainThread -  INFO - Reverse shell # command > dl
+2018-12-29 16:42:07,678 - root - MainThread -  INFO - Reverse shell # command > upload
+2018-12-29 16:42:10,366 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 16:42:14,738 - root - MainThread -  INFO - Entering to the expert mode
+2018-12-29 16:42:19,906 - root - MainThread -  INFO - Reverse shell # command > upload ?
+2018-12-29 16:42:26,454 - root - MainThread -  INFO - Reverse shell # command > dl
+2018-12-29 16:42:34,239 - root - MainThread -  INFO - Reverse shell # command > stb
+2018-12-29 16:42:34,257 - root - MainThread -  INFO - Downloading the screenshot
+2018-12-29 16:42:39,234 - root - MainThread -  INFO - Download sucessful
+2018-12-29 16:59:03,305 - root - MainThread -  INFO - Reverse shell # command > quit
+2018-12-29 16:59:05,685 - root - MainThread -  INFO - Entering to the upload menu

