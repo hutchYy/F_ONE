@@ -1,8 +1,8 @@
 # WELCOME TO F_ONE
 Project
 ========
-Build from scratch a reverse shell.
-Look how easy it is to use:
+Build from scratch a reverse shell that works with python**3.7**.
+How easy is it to use ?
 - Install dependencies
 - Run malware.py on victim's machine
 - Run client.py on the attacker's machine
