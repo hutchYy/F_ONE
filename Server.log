@@ -101,3 +101,7 @@ Default path : /Users/juliandotreppe/Desktop/hack_tools/reverse_shell
 2018-12-29 16:42:39,234 - root - MainThread -  INFO - Download sucessful
 2018-12-29 16:59:03,305 - root - MainThread -  INFO - Reverse shell # command > quit
 2018-12-29 16:59:05,685 - root - MainThread -  INFO - Entering to the upload menu
+2018-12-29 17:16:45,329 - root - MainThread -  INFO - Exiting the client & server
+2018-12-29 17:16:45,354 - root - Thread-1 -  INFO - The client is being shutted down
+2018-12-29 17:16:46,357 - root - Thread-1 -  INFO - Closing tcp client connexion
+2018-12-29 17:16:47,911 - root - MainThread -  INFO - Closing tcp server connexion
