@@ -1,21 +1,18 @@
 # WELCOME TO F_ONE
-project
+Project
 ========
-
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
-
+Build from scratch a reverse shell.
 Look how easy it is to use:
-
-    import project
-    # Get your stuff done
-    project.do_stuff()
+- Install dependencies
+- Run malware.py on victim's machine
+- Run client.py on the attacker's machine
 
 Features
 --------
 
-- Be awesome
-- Make things faster
+- Taking screenshot
+- Downloading / Uploading files
+- Embedded reverse shell
 
 Installation
 ------------
