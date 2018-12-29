@@ -5,7 +5,7 @@ import platform
 import time
 import encrypted_connection
 import datetime
-import geolocalisation
+import geolocalization
 import threading
 import argparse
 import logging
