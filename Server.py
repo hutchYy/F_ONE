@@ -18,6 +18,8 @@ else:
     arrowSymbol = "↴"
 
 # When called, clear the console. If called with True argument, wait for enter to continue.
+
+
 def consoleCleaner(enterToContinue):
     if enterToContinue == True:
         try:
